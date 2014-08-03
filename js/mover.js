@@ -35,9 +35,16 @@ function getVideoLinks() {
 
 function showButton() {
   var videoPanel = document.getElementsByClassName("video-panel")[0];
+  var embedButton = document.getElementById("embed");
   var button = document.createElement("a");
   button.setAttribute("class", "btn thin");
-  button.innerHTML = chrome.i18n.getMessage("download");
+
+  if (embedButton.innerText == "Kiritish") {
+    button.innerText = chrome.i18n.getMessage("download_uz");
+  } else {
+    button.innerText = chrome.i18n.getMessage("download");
+  }
+
   button.onclick = downloadVideo;
 
   videoPanel.appendChild(button);
