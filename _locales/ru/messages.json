@@ -1,0 +1,11 @@
+{
+	"extName": {
+		"message": "Yangichek (Янгичек)"
+	},
+	"extDescription": {
+		"message": "Скачивание видео из видеохостингов Узбекистана (Tas-IX). Пока только работает с Mover.uz."
+	},
+	"download": {
+		"message": "▼ Скачать"
+	}
+}
