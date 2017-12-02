@@ -1,7 +1,7 @@
 Yangichek
 =============
 
-http://farhodjon.uz/projects/yangichek/
+https://farhodjon.uz/projects/yangichek/
 
 O‘zbekiston videohostinglaridagi videoni yuklab olish uchun kengaytma. Videoning eng sifatli variantini yuklab beradi.
 
@@ -10,4 +10,4 @@ https://chrome.google.com/webstore/detail/yangichek-%D1%8F%D0%BD%D0%B3%D0%B8%D1%
 
 Talab va takliflar → chinberdiyev@gmail.com.
 
-Farhodjon Chinberdiyev, 2014.
+Farhodjon Chinberdiyev, 2014-2017.

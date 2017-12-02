@@ -15,22 +15,26 @@ function getVideoLinks() {
 
   return [
     {
+      resolution: "720p",
+      title: videoTitle,
+      url: "https://v.mover.uz/" + videoId + "_h.mp4"
+    },
+    {
       resolution: "480p",
       title: videoTitle,
-      url: "http://v.mover.uz/" + videoId + "_b.mp4"
+      url: "https://v.mover.uz/" + videoId + "_b.mp4"
     },
     {
       resolution: "360p",
       title: videoTitle,
-      url: "http://v.mover.uz/" + videoId + "_m.mp4"
+      url: "https://v.mover.uz/" + videoId + "_m.mp4"
     },
     {
       resolution: "240p",
       title: videoTitle,
-      url: "http://v.mover.uz/" + videoId + "_s.mp4"
+      url: "https://v.mover.uz/" + videoId + "_s.mp4"
     }
   ];
-  //"http://v.mover.uz/yEY5SQvj_m.mp4"
 }
 
 function showButton() {
@@ -48,4 +52,6 @@ function showButton() {
   button.onclick = downloadVideo;
 
   videoPanel.appendChild(button);
+
+  return button;
 }

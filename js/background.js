@@ -6,6 +6,9 @@ function onMessage(request, sender, sendResponse) {
       }
 
       var link = request.links[index];
+      var filename = link.title + ".mp4";
+      filename = filename.replace(/[:\/|]/g, "-");
+      console.log(filename);
 
       var xhr = new XMLHttpRequest();
       xhr.open("HEAD", link.url, true);
@@ -14,7 +17,7 @@ function onMessage(request, sender, sendResponse) {
           if (xhr.status == 200) {
             chrome.downloads.download({
               url: link.url,
-              filename: link.title + ".mp4"
+              filename: filename
             });
             return null;
           } else {
