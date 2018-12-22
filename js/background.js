@@ -7,8 +7,8 @@ function onMessage(request, sender, sendResponse) {
 
       var link = request.links[index];
       var filename = link.title + ".mp4";
-      filename = filename.replace(/[:\/|]/g, "-");
-      console.log(filename);
+      filename = filename.replace(/["\/]/g, "");
+      filename = filename.replace(/[:|]/g, "-");
 
       var xhr = new XMLHttpRequest();
       xhr.open("HEAD", link.url, true);
