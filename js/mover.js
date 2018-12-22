@@ -1,5 +1,5 @@
 function findVideoId() {
-  var re = /\/([^\/]*)\/$/i;
+  var re = /\/([^\/]*)\/?$/i;
   var results = re.exec(document.location.href);
 
   if (results && results.length == 2) {
